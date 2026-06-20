@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .parent{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 15px;
+            padding: 20px;
+        }
+        .child{
+            background-color: red;
+            padding: 20px;
+            text-align: center;
+        }
+
+        @media(max-width: 768px) {
+            .parent{
+                grid-template-columns: repeat(2,1fr);  
+            }
+        }
+        @media (max-width : 480px) {
+            .parent{
+                grid-template-columns: repeat(1,1fr);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">Box 1</div>
+        <div class="child">Box 2</div>
+        <div class="child">Box 3</div>
+        <div class="child">Box 4</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

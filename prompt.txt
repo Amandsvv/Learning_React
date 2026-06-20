@@ -1,0 +1,53 @@
+Please create a simple React (Vite) + javascript App.
+Follow the following guidlines.
+
+1. Use React Router V7 using <BrowserRouter> <Routes>
+2. Make a constant file for all API Endpoints as awell as frontend routes.
+3. Use single Axios Instance for all API calls.
+4. Tailwind CSS v4 (strctly v4) for styling.
+5. Use shadcn/ui component library for basic UI & Components.
+6. React Toastify library for toasts (create a centralized utility for it.)
+7. Manage error handling using try...catch and use errorToast instance to show errors or successToast instance to show success. 
+8. Store enviornment variables in .env.
+9. Have a src folder.
+    Inside src folder, have these folders:
+    - api  (for api endpoints & axios instance)
+    - components (for components)
+    - pages (for pages)
+    - routes (for routes)
+    - utils (for utilities)
+    - hooks (for hooks)
+    - lib (for libraries)
+    - constants (for constants)
+
+10. No need to have:
+    State management library or  cintext API
+    Protected Routes 
+    Any validator or provider forms
+
+11. Use React-icons for any type of icon, for that you can install it using pnpm i react-icons
+
+12. About the Frontend : 
+    It will have following Features:
+    A. Home Page
+        - basic welcome section and then list of products (10)
+            -use https://dummyjson.com/products?limit=100 (use any random 10 products)
+            -The search box at top with search button
+            - Type anything in search box and then hit the search - It will redirect to .find?q={{searchText}}
+    B. search Page
+        It wil show list of products
+            -use https://dummyjson.com/products/search?q={{searchText}} to fetch data
+            -clicking on any product card will redirect to /view/{{product-id}}
+    C. view Page
+        - It will show details of the product
+            -use https://dummyjson.com/products/{{product-id}} to fetch data
+    There will bea navbar with home button. Search Box will also be on than navbar only.
+    This will be visible to all the pages, so lets make a layout for it.
+    Do not write any other explanation or comments in the code, just the code.
+    Use modern and updated style of writing react js + modern UI components with shadcn/ui + Tailwind CSS v4
+    Do not write code for any test cases or unit test. 
+    Use white & black shades to make it interactive & modern looking.
+    You can use any color from shadcn/ui pallete, but prefer white & black.
+    Use modern font family.
+    Use minimal comments in the code.
+    Use proper semantic HTML tags.
